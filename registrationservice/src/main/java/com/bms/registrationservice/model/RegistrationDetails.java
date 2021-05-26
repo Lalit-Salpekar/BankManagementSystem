@@ -1,63 +1,36 @@
 package com.bms.registrationservice.model;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 
-@Entity
+@Document(collection = "registration")
 @JsonIgnoreProperties({ "registrationId"})
-public class RegistrationDetails extends BaseEntity {
+public class RegistrationDetails implements Serializable {
 	
 
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long registrationId;
-	
-	@Column(name="REGISTRATION_NUMBER",unique = true)
 	private String regNumber;
-	
-	@Column(name="NAME",unique = true)
 	private String name;
-	
-	@Column(name="USER_NAME",unique = true)
 	private String userName;
-	
-	@Column(name="USER_PASSWORD")
 	private String password;
-	
-	@Column(name="GUARDIAN_NAME")
 	private String guardianName;
-	
-	@Column(name="ADDRESS")
 	private String address;
-	
-	@Column(name="USER_EMAIL",length=50,unique = true)
 	private String emailAddress;
-	
-	@Column(name="GENDER")
 	private String gender;
-	
-	@Column(name="MARITIAL_STATUS")
 	private String maritalStatus;
-	
-	@Column(name="USER_PHONENUMBER",length=10,precision=10, scale=0,unique = true)
 	private BigInteger contactNo;
-	
-	@Column(name="USER_DOB",length=10)
 	private Date date0fBirth;
-	
-	@Column(name="ACCOUNT_TYPE")
 	private String accountType;
 	
 	

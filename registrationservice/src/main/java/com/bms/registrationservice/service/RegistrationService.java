@@ -17,7 +17,7 @@ public class RegistrationService {
 		if(null !=registrationDetails) {
 			registrationDetails.setRegNumber("R"+ Math.floor(Math.random()*(999-100+1)+100));
 		}
-		registrationRepository.saveAndFlush(registrationDetails);
+		registrationRepository.save(registrationDetails);
 	}
 
 
