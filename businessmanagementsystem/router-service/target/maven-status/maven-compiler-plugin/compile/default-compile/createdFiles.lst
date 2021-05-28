@@ -1,0 +1,11 @@
+com\bms\routerservice\model\LoginDetails.class
+com\bms\routerservice\service\RouterService$2.class
+com\bms\routerservice\model\LoanDetails.class
+com\bms\routerservice\service\RouterService$1.class
+com\bms\routerservice\service\RouterService$4.class
+com\bms\routerservice\RouterServiceApplication.class
+com\bms\routerservice\model\RegistrationDetails.class
+com\bms\routerservice\controller\RouterController.class
+com\bms\routerservice\model\UpdateRegisterUser.class
+com\bms\routerservice\service\RouterService.class
+com\bms\routerservice\service\RouterService$3.class
