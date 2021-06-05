@@ -21,6 +21,7 @@
 		<module>registration-service</module>
 		<module>router-service</module>
 		<module>loan-service</module>
+		<module>tokenservice</module>
 	</modules>
  
   <properties>
